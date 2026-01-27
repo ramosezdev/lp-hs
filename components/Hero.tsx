@@ -24,10 +24,10 @@ const Hero: React.FC = () => {
         <div className="absolute top-[70%] left-[40%] w-3 h-3 bg-brand-red/25 rounded-full blur-sm animate-float" style={{animationDelay: '3s'}}></div>
       </div>
 
-      <div className="container mx-auto px-4 text-center z-10 relative">
+      <div className="w-full max-w-[98vw] md:container mx-auto px-2 md:px-4 text-center z-10 relative">
         
         {/* Premium Glassmorphism Badge */}
-        <div className="flex justify-center mb-12 animate-fade-in-down">
+        <div className="flex justify-center mb-8 md:mb-12 animate-fade-in-down">
             <div className="relative group cursor-default">
                 {/* Glow background */}
                 <div className="absolute inset-0 bg-gradient-to-r from-brand-red/30 via-red-600/30 to-brand-red/30 blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500 animate-pulse"></div>
@@ -77,8 +77,8 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Premium Description */}
-        <div className="max-w-4xl mx-auto mb-24 text-center animate-fade-in-up" style={{animationDelay: '0.6s'}}>
-          <p className="text-gray-200 text-2xl md:text-3xl font-gaming font-semibold tracking-wide leading-relaxed drop-shadow-[0_4px_20px_rgba(0,0,0,0.5)] mb-2">
+        <div className="max-w-xl md:max-w-4xl mx-auto mb-10 md:mb-24 text-center animate-fade-in-up" style={{animationDelay: '0.6s'}}>
+          <p className="text-gray-200 text-lg sm:text-xl md:text-3xl font-gaming font-semibold tracking-wide leading-relaxed drop-shadow-[0_4px_20px_rgba(0,0,0,0.5)] mb-2">
             O{' '}
             <span className="relative inline-block group/brand cursor-default">
               <span className="absolute inset-0 blur-xl bg-brand-red/50 opacity-60 group-hover/brand:opacity-100 transition-opacity"></span>
@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
             </span>
             {' '}transforma sua jogabilidade.
           </p>
-          <p className="text-gray-300 text-xl md:text-2xl font-gaming tracking-wide leading-relaxed">
+          <p className="text-gray-300 text-base sm:text-lg md:text-2xl font-gaming tracking-wide leading-relaxed">
             A ferramenta secreta dos{' '}
             <span className="relative inline-block group/text cursor-default">
               <span className="text-white font-bold border-b-2 border-brand-red/50 group-hover/text:border-brand-red pb-1 transition-all group-hover/text:text-brand-red">
@@ -101,7 +101,7 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Premium Glass Stats Cards */}
-        <div className="relative flex flex-col md:flex-row justify-center items-stretch gap-6 md:gap-8 max-w-7xl mx-auto animate-fade-in-up" style={{animationDelay: '0.8s'}}>
+        <div className="relative flex flex-col md:flex-row justify-center items-stretch gap-4 md:gap-8 max-w-2xl md:max-w-7xl mx-auto animate-fade-in-up" style={{animationDelay: '0.8s'}}>
           {/* Background decorative lines */}
           <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand-red/30 to-transparent"></div>
           <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-brand-red/30 to-transparent"></div>
@@ -130,29 +130,25 @@ const Hero: React.FC = () => {
 };
 
 const StatItem = ({ icon: Icon, title, subtitle }: { icon: any, title: string, subtitle: string }) => (
-    <div className="relative flex items-center gap-6 group cursor-default flex-1">
+    <div className="relative flex items-center gap-3 sm:gap-6 group cursor-default flex-1 min-w-[220px] max-w-full">
         {/* Glow effect on hover */}
         <div className="absolute inset-0 bg-gradient-to-r from-brand-red/20 via-red-600/20 to-brand-red/20 blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-700 -z-10"></div>
-        
         {/* Glass card */}
-        <div className="relative flex items-center gap-6 px-10 py-6 rounded-xl border-2 border-white/[0.08] bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-2xl group-hover:border-brand-red/40 group-hover:from-brand-red/[0.12] group-hover:to-brand-red/[0.04] transition-all duration-500 w-full shadow-[0_8px_32px_rgba(0,0,0,0.3)] group-hover:shadow-[0_12px_48px_rgba(255,0,60,0.25)] group-hover:scale-[1.03] overflow-hidden">
+        <div className="relative flex items-center gap-3 sm:gap-6 px-4 sm:px-10 py-4 sm:py-6 rounded-xl border-2 border-white/[0.08] bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-2xl group-hover:border-brand-red/40 group-hover:from-brand-red/[0.12] group-hover:to-brand-red/[0.04] transition-all duration-500 w-full shadow-[0_8px_32px_rgba(0,0,0,0.3)] group-hover:shadow-[0_12px_48px_rgba(255,0,60,0.25)] group-hover:scale-[1.03] overflow-hidden">
             {/* Shine effect */}
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/[0.08] to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-            
             {/* Icon container with premium effects */}
             <div className="relative">
                 <div className="absolute inset-0 bg-brand-red/30 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="relative p-5 bg-gradient-to-br from-brand-red/20 via-brand-red/10 to-transparent rounded-lg group-hover:from-brand-red/30 group-hover:via-brand-red/15 transition-all duration-500 group-hover:shadow-[0_0_30px_rgba(255,0,60,0.5)] group-hover:rotate-6 group-hover:scale-110 border border-brand-red/20 group-hover:border-brand-red/40">
-                    <Icon className="w-10 h-10 text-brand-red drop-shadow-[0_0_16px_rgba(255,0,60,1)] group-hover:scale-110 transition-transform duration-500" />
+                <div className="relative p-3 sm:p-5 bg-gradient-to-br from-brand-red/20 via-brand-red/10 to-transparent rounded-lg group-hover:from-brand-red/30 group-hover:via-brand-red/15 transition-all duration-500 group-hover:shadow-[0_0_30px_rgba(255,0,60,0.5)] group-hover:rotate-6 group-hover:scale-110 border border-brand-red/20 group-hover:border-brand-red/40">
+                    <Icon className="w-7 h-7 sm:w-10 sm:h-10 text-brand-red drop-shadow-[0_0_16px_rgba(255,0,60,1)] group-hover:scale-110 transition-transform duration-500" />
                 </div>
             </div>
-            
             {/* Text content */}
             <div className="text-left flex-1">
-                <span className="block text-white font-black font-display text-2xl tracking-wide group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:via-brand-red group-hover:to-white transition-all duration-500 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">{title}</span>
-                <span className="block text-sm text-gray-400 uppercase font-bold tracking-[0.25em] mt-1 group-hover:text-gray-300 transition-colors">{subtitle}</span>
+                <span className="block text-white font-black font-display text-base sm:text-xl tracking-wide group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:via-brand-red group-hover:to-white transition-all duration-500 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">{title}</span>
+                <span className="block text-xs sm:text-sm text-gray-400 uppercase font-bold tracking-[0.15em] sm:tracking-[0.25em] mt-1 group-hover:text-gray-300 transition-colors">{subtitle}</span>
             </div>
-            
             {/* Corner accent */}
             <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-brand-red/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         </div>
