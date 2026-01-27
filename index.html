@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="HsMaxLG.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HS MAX 3.0 | O Terror da Ranqueada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Orbitron', 'sans-serif'],
+              gaming: ['Rajdhani', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                red: '#ff003c',
+                dark: '#050505',
+                card: '#0a0a0a',
+                crimson: '#8a0020'
+              }
+            },
+            animation: {
+              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'scroll': 'scroll 40s linear infinite',
+              'spin-slow': 'spin 8s linear infinite',
+              'float': 'float 6s ease-in-out infinite',
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'fade-in-down': 'fadeInDown 0.8s ease-out forwards',
+              'gradient-x': 'gradientX 3s ease infinite',
+            },
+            keyframes: {
+              scroll: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-50%)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(30px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              fadeInDown: {
+                '0%': { opacity: '0', transform: 'translateY(-30px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              gradientX: {
+                '0%, 100%': { backgroundPosition: '0% 50%' },
+                '50%': { backgroundPosition: '100% 50%' },
+              },
+            },
+            backgroundSize: {
+              '200': '200% 200%',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #000000;
+        color: #ffffff;
+        overflow-x: hidden;
+      }
+      
+      /* Smooth Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #000; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333; 
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #ff003c; 
+      }
+
+      /* Glow Utilities */
+      .glow-text-red {
+        text-shadow: 0 0 40px rgba(255, 0, 60, 0.8), 0 0 80px rgba(255, 0, 60, 0.4);
+      }
+      .glow-box-red {
+        box-shadow: 0 0 30px rgba(255, 0, 60, 0.3), 0 0 60px rgba(255, 0, 60, 0.15);
+      }
+
+      /* Premium Gradient Background */
+      .bg-gradient-radial {
+        background: radial-gradient(circle, var(--tw-gradient-stops));
+      }
+
+      /* Grid Background with enhanced perspective */
+      .bg-grid {
+        background-size: 60px 60px;
+        background-image: 
+          linear-gradient(to right, rgba(255, 0, 60, 0.08) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(255, 0, 60, 0.08) 1px, transparent 1px);
+        transform: perspective(800px) rotateX(60deg);
+        transform-origin: top;
+        mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+      }
+      
+      /* Glassmorphism effect */
+      .glass {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      
+      /* Animated gradient background */
+      @keyframes gradientShift {
+        0%, 100% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+      }
+      
+      .animate-gradient {
+        background-size: 200% 200%;
+        animation: gradientShift 8s ease infinite;
+      }
+      
+      /* Hide default scrollbar on Firefox */
+      * {
+        scrollbar-width: thin;
+        scrollbar-color: #333 #000;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
