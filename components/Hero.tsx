@@ -27,21 +27,19 @@ const Hero: React.FC = () => {
       <div className="w-full max-w-[98vw] md:container mx-auto px-2 md:px-4 text-center z-10 relative">
         
         {/* Premium Glassmorphism Badge */}
-        <div className="flex justify-center mb-8 md:mb-12 animate-fade-in-down">
+        <div className="flex justify-center mb-6 md:mb-12 animate-fade-in-down">
             <div className="relative group cursor-default">
                 {/* Glow background */}
                 <div className="absolute inset-0 bg-gradient-to-r from-brand-red/30 via-red-600/30 to-brand-red/30 blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500 animate-pulse"></div>
-                
                 {/* Glass card */}
-                <div className="relative border-2 border-brand-red/40 bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-xl px-8 py-3 rounded-lg flex items-center gap-4 shadow-[0_8px_32px_rgba(255,0,60,0.15)] group-hover:shadow-[0_12px_48px_rgba(255,0,60,0.3)] group-hover:border-brand-red/60 transition-all duration-500 overflow-hidden">
+                <div className="relative border-2 border-brand-red/40 bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-xl px-4 py-2 rounded-lg flex items-center gap-2 shadow-[0_8px_32px_rgba(255,0,60,0.15)] group-hover:shadow-[0_12px_48px_rgba(255,0,60,0.3)] group-hover:border-brand-red/60 transition-all duration-500 overflow-hidden">
                     {/* Shine effect */}
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-                    
-                    <span className="relative flex h-3.5 w-3.5">
+                    <span className="relative flex h-2.5 w-2.5">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-red opacity-75"></span>
-                      <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-gradient-to-br from-brand-red to-red-600 shadow-[0_0_12px_rgba(255,0,60,0.8)]"></span>
+                      <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-gradient-to-br from-brand-red to-red-600 shadow-[0_0_12px_rgba(255,0,60,0.8)]"></span>
                     </span>
-                    <span className="relative text-white font-gaming font-black tracking-[0.25em] text-sm md:text-base uppercase group-hover:text-brand-red transition-colors duration-300">
+                    <span className="relative text-white font-gaming font-black tracking-[0.18em] text-xs md:text-sm uppercase group-hover:text-brand-red transition-colors duration-300">
                         Sistema Indetectável v4.2
                     </span>
                 </div>
@@ -65,8 +63,8 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Premium Description */}
-        <div className="max-w-xl md:max-w-4xl mx-auto mb-10 md:mb-24 text-center animate-fade-in-up" style={{animationDelay: '0.6s'}}>
-          <p className="text-gray-200 text-lg sm:text-xl md:text-3xl font-gaming font-semibold tracking-wide leading-relaxed drop-shadow-[0_4px_20px_rgba(0,0,0,0.5)] mb-2">
+        <div className="max-w-xl md:max-w-4xl mx-auto mb-8 md:mb-24 text-center animate-fade-in-up" style={{animationDelay: '0.6s'}}>
+          <p className="text-gray-200 text-sm sm:text-base md:text-2xl font-gaming font-semibold tracking-wide leading-relaxed drop-shadow-[0_4px_20px_rgba(0,0,0,0.5)] mb-2">
             O{' '}
             <span className="relative inline-block group/brand cursor-default">
               <span className="absolute inset-0 blur-xl bg-brand-red/50 opacity-60 group-hover/brand:opacity-100 transition-opacity"></span>
@@ -76,7 +74,7 @@ const Hero: React.FC = () => {
             </span>
             {' '}transforma sua jogabilidade.
           </p>
-          <p className="text-gray-300 text-base sm:text-lg md:text-2xl font-gaming tracking-wide leading-relaxed">
+          <p className="text-gray-300 text-xs sm:text-sm md:text-xl font-gaming tracking-wide leading-relaxed">
             A ferramenta secreta dos{' '}
             <span className="relative inline-block group/text cursor-default">
               <span className="text-white font-bold border-b-2 border-brand-red/50 group-hover/text:border-brand-red pb-1 transition-all group-hover/text:text-brand-red">
