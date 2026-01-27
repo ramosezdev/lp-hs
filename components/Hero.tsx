@@ -50,31 +50,27 @@ const Hero: React.FC = () => {
 
         {/* Ultra Premium Typography */}
         <div className="relative mb-16 group">
-            <h1 className="font-display font-black italic uppercase tracking-tighter leading-[0.8]">
-                {/* Subtitle with elegant entrance */}
-                <span className="block text-6xl md:text-8xl lg:text-9xl text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-100 to-white mb-4 drop-shadow-[0_6px_25px_rgba(255,255,255,0.15)] transition-all duration-700 group-hover:translate-x-3 group-hover:drop-shadow-[0_8px_35px_rgba(255,0,60,0.4)] animate-fade-in-up">
+            <h1 className="font-display font-black italic uppercase tracking-tighter leading-[0.9]">
+                {/* Subtitle responsivo */}
+                <span className="block text-4xl sm:text-5xl md:text-8xl lg:text-9xl text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-100 to-white mb-2 md:mb-4 drop-shadow-[0_6px_25px_rgba(255,255,255,0.15)] transition-all duration-700 group-hover:translate-x-3 group-hover:drop-shadow-[0_8px_35px_rgba(255,0,60,0.4)] animate-fade-in-up">
                     VIRE UM
                 </span>
-                
-                {/* Main title with complex effects */}
+                {/* Main title responsivo */}
                 <div className="relative inline-block">
                     {/* Background glow layers */}
-                    <div className="absolute inset-0 text-8xl md:text-[10rem] lg:text-[13rem] text-brand-red blur-[60px] opacity-60 animate-pulse-slow">MONSTRO</div>
-                    <div className="absolute inset-0 text-8xl md:text-[10rem] lg:text-[13rem] text-red-600 blur-[40px] opacity-40 animate-pulse-slow" style={{animationDelay: '1s'}}>MONSTRO</div>
-                    
+                    <div className="absolute inset-0 text-5xl sm:text-7xl md:text-[10rem] lg:text-[13rem] text-brand-red blur-[30px] md:blur-[60px] opacity-60 animate-pulse-slow">MONSTRO</div>
+                    <div className="absolute inset-0 text-5xl sm:text-7xl md:text-[10rem] lg:text-[13rem] text-red-600 blur-[20px] md:blur-[40px] opacity-40 animate-pulse-slow" style={{animationDelay: '1s'}}>MONSTRO</div>
                     {/* Main gradient text */}
-                    <span className="relative block text-8xl md:text-[10rem] lg:text-[13rem] text-transparent bg-clip-text bg-gradient-to-b from-brand-red via-[#ff1a47] to-[#c9002e] drop-shadow-[0_0_100px_rgba(255,0,60,1)] transition-all duration-700 group-hover:-translate-x-3 group-hover:scale-[1.02] scale-y-[1.15] animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+                    <span className="relative block text-5xl sm:text-7xl md:text-[10rem] lg:text-[13rem] text-transparent bg-clip-text bg-gradient-to-b from-brand-red via-[#ff1a47] to-[#c9002e] drop-shadow-[0_0_40px_rgba(255,0,60,1)] md:drop-shadow-[0_0_100px_rgba(255,0,60,1)] transition-all duration-700 group-hover:-translate-x-3 group-hover:scale-[1.02] scale-y-[1.10] animate-fade-in-up" style={{animationDelay: '0.2s'}}>
                         MONSTRO
                     </span>
-                    
                     {/* Outline effect */}
-                    <span className="absolute inset-0 text-8xl md:text-[10rem] lg:text-[13rem] text-transparent [-webkit-text-stroke:2px_rgba(255,0,60,0.3)] opacity-50 group-hover:opacity-70 transition-opacity">
+                    <span className="absolute inset-0 text-5xl sm:text-7xl md:text-[10rem] lg:text-[13rem] text-transparent [-webkit-text-stroke:1px_rgba(255,0,60,0.3)] md:[-webkit-text-stroke:2px_rgba(255,0,60,0.3)] opacity-50 group-hover:opacity-70 transition-opacity">
                         MONSTRO
                     </span>
                 </div>
-                
-                {/* Bottom text with premium spacing */}
-                <span className="block text-4xl md:text-6xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-gray-400 via-gray-200 to-gray-400 font-bold mt-10 tracking-[0.5em] font-gaming drop-shadow-[0_4px_20px_rgba(255,255,255,0.1)] animate-fade-in-up" style={{animationDelay: '0.4s'}}>
+                {/* Bottom text responsivo */}
+                <span className="block text-xl sm:text-2xl md:text-6xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-gray-400 via-gray-200 to-gray-400 font-bold mt-6 md:mt-10 tracking-[0.3em] md:tracking-[0.5em] font-gaming drop-shadow-[0_4px_20px_rgba(255,255,255,0.1)] animate-fade-in-up" style={{animationDelay: '0.4s'}}>
                     NO FREE FIRE
                 </span>
             </h1>
