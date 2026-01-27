@@ -47,18 +47,17 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Ultra Premium Typography */}
-        <div className="relative mb-10 md:mb-16 group">
+        <div className="relative mb-5 md:mb-8 group">
             <h1 className="font-display font-bold uppercase tracking-tight leading-tight text-center">
-                <span className="block text-2xl sm:text-3xl md:text-5xl text-white mb-2 animate-fade-in-up">
-                    Transforme seu jogo
+                <span className="block text-base sm:text-lg md:text-2xl text-white mb-1 animate-fade-in-up">
+                    Jogue como um Pro
                 </span>
-                <span className="block text-lg sm:text-xl md:text-3xl text-brand-red font-black animate-fade-in-up" style={{animationDelay: '0.15s'}}>
-                    HS MAX 3.0: O Segredo dos Pro Players
+                <span className="block text-xs sm:text-base md:text-lg text-brand-red font-black animate-fade-in-up" style={{animationDelay: '0.12s'}}>
+                    HS MAX 3.0: Seu diferencial
                 </span>
             </h1>
-            <span className="block mt-4 text-base sm:text-lg text-gray-300 font-gaming animate-fade-in-up" style={{animationDelay: '0.3s'}}>
-                Sistema indetectável, desempenho máximo e jogabilidade profissional.<br className="hidden sm:block" />
-                Pronto para subir de nível?
+            <span className="block mt-2 text-xs sm:text-sm text-gray-300 font-gaming animate-fade-in-up" style={{animationDelay: '0.22s'}}>
+                Sistema indetectável, desempenho máximo e jogabilidade profissional.
             </span>
         </div>
 
