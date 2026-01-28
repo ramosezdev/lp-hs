@@ -52,10 +52,10 @@ const Testimonials: React.FC = () => {
         <div className="text-center">
           <div className="inline-flex items-center gap-3 mb-6 bg-brand-red/10 border-2 border-brand-red/30 px-6 py-2 rounded-sm">
              <span className="w-2.5 h-2.5 bg-brand-red rounded-full animate-pulse shadow-[0_0_15px_rgba(255,0,60,0.8)]"></span>
-             <span className="text-brand-red font-black font-gaming tracking-[0.3em] uppercase text-sm">Squad Verificado</span>
+             <span className="text-brand-red font-black font-gaming tracking-[0.2em] uppercase text-xs">squad verificado</span>
           </div>
-          <h2 className="font-display text-5xl md:text-7xl font-black text-white italic uppercase tracking-tight drop-shadow-[0_4px_30px_rgba(255,0,60,0.3)] mb-4">
-            FALA DA <span className="text-brand-red glow-text-red">TROPA</span>
+          <h2 className="font-display text-xl xs:text-2xl sm:text-3xl md:text-4xl font-black text-white italic uppercase tracking-tight drop-shadow-[0_4px_30px_rgba(255,0,60,0.3)] mb-2">
+            fala da <span className="text-brand-red glow-text-red">tropa</span>
           </h2>
           <p className="text-gray-300 font-gaming text-xl">Veja o que os <span className="text-brand-red font-bold">mestres</span> estão dizendo</p>
         </div>

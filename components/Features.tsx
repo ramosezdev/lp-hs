@@ -58,27 +58,27 @@ const Features: React.FC = () => {
             <div className="relative group cursor-default">
               <div className="absolute inset-0 bg-brand-red/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <div className="relative border-2 border-brand-red/30 bg-gradient-to-r from-white/[0.05] to-white/[0.02] backdrop-blur-xl px-6 py-2 rounded-lg">
-                <span className="text-brand-red font-gaming text-sm tracking-[0.4em] uppercase font-black flex items-center gap-2">
+                <span className="text-brand-red font-gaming text-xs tracking-[0.3em] uppercase font-black flex items-center gap-2">
                   <span className="w-2 h-2 bg-brand-red rounded-full animate-pulse shadow-[0_0_10px_rgba(255,0,60,0.8)]"></span>
-                  FUNCIONALIDADES
+                  funcionalidades
                 </span>
               </div>
             </div>
           </div>
           
           {/* Main title */}
-          <h2 className="font-display text-6xl md:text-8xl font-black mb-10 uppercase italic text-white drop-shadow-[0_8px_40px_rgba(255,0,60,0.4)] animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            ARSENAL{' '}
+          <h2 className="font-display text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-black mb-4 uppercase italic text-white drop-shadow-[0_8px_40px_rgba(255,0,60,0.4)] animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+            arsenal{' '}
             <span className="relative inline-block">
-              <span className="absolute inset-0 text-brand-red blur-[40px] opacity-60">COMPLETO</span>
+              <span className="absolute inset-0 text-brand-red blur-[20px] opacity-60">completo</span>
               <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-brand-red via-red-500 to-brand-red bg-200 animate-gradient-x">
-                COMPLETO
+                completo
               </span>
             </span>
           </h2>
           
           {/* Description */}
-          <p className="text-gray-300 max-w-3xl mx-auto text-2xl font-gaming tracking-wide leading-relaxed animate-fade-in-up" style={{animationDelay: '0.4s'}}>
+          <p className="text-gray-300 max-w-3xl mx-auto text-xs xs:text-sm sm:text-base md:text-lg font-gaming tracking-wide leading-relaxed animate-fade-in-up" style={{animationDelay: '0.4s'}}>
             Tecnologia de ponta para você{' '}
             <span className="relative inline-block text-white font-bold group/word cursor-default">
               <span className="absolute inset-0 blur-sm bg-brand-red/30 opacity-0 group-hover/word:opacity-100 transition-opacity"></span>
@@ -118,12 +118,12 @@ const Features: React.FC = () => {
                 
                 {/* Content */}
                 <div className="relative">
-                  <h3 className="font-display text-2xl font-black mb-5 uppercase italic tracking-tight transition-all duration-500">
+                  <h3 className="font-display text-base xs:text-lg sm:text-xl font-black mb-2 uppercase italic tracking-tight transition-all duration-500">
                     <span className="text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:via-brand-red group-hover:to-white transition-all">
                       {feature.title}
                     </span>
                   </h3>
-                  <p className="text-gray-400 leading-relaxed font-gaming text-lg group-hover:text-gray-200 transition-colors duration-500">
+                  <p className="text-gray-400 leading-relaxed font-gaming text-xs xs:text-sm sm:text-base group-hover:text-gray-200 transition-colors duration-500">
                     {feature.description}
                   </p>
                 </div>
